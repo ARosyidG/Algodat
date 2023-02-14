@@ -29,14 +29,14 @@ scale = Vector2( 0.976692, 0.460401 )
 texture = ExtResource( 2 )
 script = ExtResource( 5 )
 
-[node name="Code3" type="Sprite" parent="CodeContener"]
-position = Vector2( 28.6127, 228.368 )
+[node name="Code2" type="Sprite" parent="CodeContener"]
+position = Vector2( 215.072, 129.131 )
 scale = Vector2( 0.976692, 0.460401 )
 texture = ExtResource( 2 )
 script = ExtResource( 5 )
 
-[node name="Code2" type="Sprite" parent="CodeContener"]
-position = Vector2( 215.072, 129.131 )
+[node name="Code3" type="Sprite" parent="CodeContener"]
+position = Vector2( 28.6127, 228.368 )
 scale = Vector2( 0.976692, 0.460401 )
 texture = ExtResource( 2 )
 script = ExtResource( 5 )

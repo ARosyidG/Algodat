@@ -18,20 +18,26 @@ func _ready():
 	for n in range(codes.size()-1):
 		var j = i
 #		print(codes[j-1])
-#		print(codes[j])
-		while j > 0 and codes[j-1].position.y > codes[j].position.y:
-			var temp = codes[j-1]
-			codes[j-1] = codes[j]
-			codes[j] = temp
+		print(codes)
+		print(j)
+		while j > 0 and get_children()[j-1].position.y > get_children()[j].position.y:
+#			var temp = get_children()[j-1]
+			move_child(get_children()[j], j-1)
+#			print(get_children())
+#			move_child(temp, j)
+#			codes[j-1] = codes[j]
+#			codes[j] = temp
 			j = j-1
-#			print(codes)
+			print ("lol")
 		i=i+1
+		print("lol1")
 	print(codes)
 	for code in codes:
 		print(code.position)
 		code.position = CodeContener
 		CodeContener.y = CodeContener.y + ((code.texture.get_height() * code.scale.y)+5)
 		print(code.position)
+	print(get_children())
 	pass # Replace with function body.
 
 
