@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://5mendrydqqej"]
+
+[ext_resource type="Script" path="res://tscn/Code.gd" id="2"]
+
+[sub_resource type="SystemFont" id="SystemFont_qu7ed"]
+font_names = PackedStringArray("Courier New")
+multichannel_signed_distance_field = true
+
+[sub_resource type="LabelSettings" id="LabelSettings_pathh"]
+font = SubResource("SystemFont_qu7ed")
+font_size = 59
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(1.367, 1.15)
+
+[node name="Code" type="Label"]
+offset_left = 48.0
+offset_top = 130.0
+offset_right = 302.0
+offset_bottom = 201.0
+scale = Vector2(1, 0.465)
+text = "A -> B"
+label_settings = SubResource("LabelSettings_pathh")
+autowrap_mode = 2
+script = ExtResource("2")
